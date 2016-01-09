@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_pursuer_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:contentDescription="@string/pursuers"
+        android:layout_gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/tv_pursuer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/civ_pursuer_icon"/>
+
+    <Button
+        android:id="@+id/btn_accept_pursue"
+        android:layout_width="48dp"
+        android:layout_height="36dp"
+        android:background="@drawable/accent_btn_background"
+        android:textColor="@drawable/accent_tv_color"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="@string/accept"
+        android:textSize="12sp"/>
+
+    <Button
+        android:id="@+id/btn_reject_pursue"
+        android:layout_width="48dp"
+        android:layout_height="36dp"
+        android:background="@drawable/normal_btn_background"
+        android:textColor="@drawable/normal_tv_color"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/btn_accept_pursue"
+        android:layout_centerVertical="true"
+        android:text="@string/reject"
+        android:textSize="12sp"/>
+
+</RelativeLayout>

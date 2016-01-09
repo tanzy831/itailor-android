@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thea.itailor" >
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.Camera" />
+    <uses-feature android:name="android.hardware.Camera.autofocus" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_sewing_white"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.NoActionBar" >
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name=".armoire.app.ShowBodyActivity"
+            android:label="@string/show_body"
+            android:theme="@style/Theme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".community.app.ShareActivity"
+            android:label="@string/share"
+            android:launchMode="singleTask" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thea.itailor.MainActivity" />
+        </activity>
+        <activity
+            android:name=".community.app.PostsActivity"
+            android:label="@string/community_posts" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thea.itailor.MainActivity" />
+        </activity>
+        <activity
+            android:name=".community.app.ShareInfoActivity"
+            android:label="@string/share_info" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thea.itailor.MainActivity" />
+        </activity>
+        <activity
+            android:name=".recommend.app.FavouritesActivity"
+            android:label="@string/my_favourites" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thea.itailor.MainActivity" />
+        </activity>
+        <activity
+            android:name=".armoire.app.ScanActivity"
+            android:label="@string/add_cloth" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thea.itailor.MainActivity" />
+        </activity>
+        <activity
+            android:name=".recommend.app.BodyDataActivity"
+            android:label="@string/body_data" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thea.itailor.MainActivity" />
+        </activity>
+        <activity
+            android:name=".personal.app.SettingsActivity"
+            android:label="@string/settings" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thea.itailor.MainActivity" />
+        </activity>
+        <activity
+            android:name=".personal.app.FeedbackActivity"
+            android:label="@string/feedback"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thea.itailor.MainActivity" />
+        </activity>
+        <activity
+            android:name=".community.app.LoginActivity"
+            android:label="@string/login"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thea.itailor.MainActivity" />
+        </activity>
+        <activity
+            android:name=".personal.app.UserInfoActivity"
+            android:label="@string/user_info" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thea.itailor.MainActivity" />
+        </activity>
+        <activity
+            android:name=".community.app.MyFriendsActivity"
+            android:label="@string/my_friends" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thea.itailor.MainActivity" />
+        </activity>
+        <activity
+            android:name=".personal.app.AboutUsActivity"
+            android:label="@string/about_us"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thea.itailor.MainActivity" />
+        </activity>
+        <activity
+            android:name=".community.app.ImagesActivity"
+            android:label="@string/images"
+            android:parentActivityName=".community.app.ShareActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thea.itailor.community.app.ShareActivity" />
+        </activity>
+        <activity
+            android:name=".community.app.AddFriendActivity"
+            android:label="@string/action_add_friend"
+            android:parentActivityName=".community.app.MyFriendsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thea.itailor.community.app.MyFriendsActivity" />
+        </activity>
+        <activity
+            android:name=".community.app.PursuersActivity"
+            android:label="@string/pursuers"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thea.itailor.MainActivity" />
+        </activity>
+        <activity
+            android:name=".recommend.app.PreferenceActivity"
+            android:label="@string/test_preferences"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thea.itailor.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent222222" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".community.app.DetailsActivity"
+            android:label="@string/details"
+            android:parentActivityName=".community.app.PostsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thea.itailor.community.app.PostsActivity" />
+        </activity>
+        <activity
+            android:name=".personal.app.NotificationActivity"
+            android:label="@string/notification" >
+        </activity>
+        <activity
+            android:name=".recommend.app.ColorImageActivity"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thea.itailor.MainActivity" />
+        </activity>
+
+        <service android:name=".services.BodyDataService" >
+            <intent-filter>
+                <action android:name="com.thea.itailor.services.BodyDataService" />
+            </intent-filter>
+        </service>
+        <service android:name=".services.SettingsService" >
+            <intent-filter>
+                <action android:name="com.thea.itailor.services.SettingsService" />
+            </intent-filter>
+        </service>
+        <service android:name=".services.LocationService" >
+            <intent-filter>
+                <action android:name="com.thea.itailor.services.LocationService" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

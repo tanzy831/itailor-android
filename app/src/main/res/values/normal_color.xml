@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_text_color">@color/grey_800</color>
+    <color name="second_text_color">@color/grey_700</color>
+    <color name="normal_text_color">@color/grey_500</color>
+</resources>

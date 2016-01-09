@@ -1,0 +1,75 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/white"
+    tools:context="com.thea.itailor.personal.app.AboutUsActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp">
+        <TextView
+            android:id="@+id/tv_ip"
+            android:text="IP: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_affirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/affirm"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+
+        <EditText
+            android:id="@+id/et_ip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_ip"
+            android:layout_toLeftOf="@+id/btn_affirm"
+            android:text="192.168.0.102" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_test_connection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_ip"
+        android:layout_marginTop="36dp"
+        android:text="测试连接状况"
+        android:layout_alignRight="@+id/rl_ip"
+        android:layout_alignLeft="@+id/rl_ip"/>
+
+    <Button
+        android:id="@+id/btn_init_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="加载初始数据"
+        android:layout_below="@+id/btn_test_connection"
+        android:layout_marginTop="36dp"
+        android:layout_alignRight="@+id/rl_ip"
+        android:layout_alignLeft="@+id/rl_ip"/>
+
+    <Button
+        android:id="@+id/btn_compulsory_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="强制注销"
+        android:layout_below="@+id/btn_init_data"
+        android:layout_marginTop="36dp"
+        android:layout_alignRight="@+id/rl_ip"
+        android:layout_alignLeft="@+id/rl_ip"/>
+
+</RelativeLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //主页
+    <string name="armoire">衣柜</string>
+    <string name="recommend">定制</string>
+    <string name="community">社区</string>
+    <string name="personal">我的</string>
+
+    //界面标题
+    <string name="my_armoire">我的衣柜</string>
+    <string name="personal_recommend">私人定制</string>
+    <string name="friends_share">好友动态</string>
+    <string name="community_posts">社区热帖</string>
+    <string name="add_cloth">添加衣服</string>
+    <string name="show_body">3D模型</string>
+    <string name="personal_center">个人中心</string>
+    <string name="login">登录</string>
+    <string name="my_friends">我的好友</string>
+    <string name="pursuers">追求者</string>
+    <string name="body_data">身体数据</string>
+    <string name="user_info">用户信息</string>
+    <string name="user_preferences">用户偏好</string>
+    <string name="my_favourites">我的收藏</string>
+    <string name="share_info">我的分享</string>
+    <string name="share">分享</string>
+    <string name="images_activity">所有图片</string>
+    <string name="settings">系统设置</string>
+    <string name="feedback">反馈</string>
+    <string name="about_us">关于我们</string>
+    <string name="details">详细信息</string>
+    <string name="notification">通知</string>
+
+    //动作
+    <string name="action_settings">设置</string>
+    <string name="action_camera">拍照</string>
+    <string name="action_grid">图片模式</string>
+    <string name="action_small_grid">小图模式</string>
+    <string name="action_list">列表模式</string>
+    <string name="action_send">发送</string>
+    <string name="action_add_friend">添加朋友</string>
+    <string name="action_favour">点赞</string>
+    <string name="action_share">分享</string>
+    <string name="action_search">搜索</string>
+    <string name="action_edit">编辑</string>
+    <string name="action_new_group">新建分组</string>
+    <string name="delete">删除</string>
+    <string name="move_to">移动到</string>
+    <string name="reject_share">屏蔽Ta的分享</string>
+    <string name="not_share_him">不分享给Ta</string>
+
+    //提示信息
+    <string name="email">邮箱</string>
+    <string name="password">密码</string>
+    <string name="label_name">备&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;注</string>
+    <string name="new_name">新装</string>
+    <string name="label_group_name">组&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;名</string>
+    <string name="description">描述</string>
+    <string name="auto_sync">自动同步</string>
+    <string name="display_notification">消息通知</string>
+    <string name="clear_cache">清空缓存</string>
+    <string name="check_update">检查更新</string>
+    <string name="version_information">版本信息</string>
+    <string name="what_share">你想说&#8230;</string>
+    <string name="sure_delete">确认删除吗?</string>
+    <string name="et_fb_hint">您的意见会让我们更贴心哦~</string>
+    <string name="search_hint">搜索&#8230;</string>
+    <string name="abc_search_hint">搜索&#8230;</string>
+
+    //消息
+    <string name="empty_armoire">衣柜空空如也，快来添加吧^~^</string>
+    <string name="loading">拼命加载中&#8230;</string>
+    <string name="no_more">只有这么多哦，待会再来吧！</string>
+    <string name="need_login">需要先登录哦!</string>
+    <string name="overdue_login">登录过期，请重新登录!</string>
+    <string name="successful_save">保存成功</string>
+    <string name="fail_add">添加失败</string>
+    <string name="fail_delete">删除失败</string>
+    <string name="fail_by_network">网络出错</string>
+    <string name="successful_login">登录成功</string>
+    <string name="successful_register">注册成功，去登录吧！</string>
+    <string name="exist_email_error">邮箱已存在！</string>
+    <string name="fail_register">注册失败，请重试！</string>
+    <string name="fail_login">用户名或密码错误，请重新登录！</string>
+    <string name="fail_login_with_bad_network">网络请求出错，请重新登录！</string>
+    <string name="error_invalid_email">此邮箱无效</string>
+    <string name="error_invalid_password">密码太短</string>
+    <string name="error_incorrect_password">密码不正确</string>
+    <string name="error_field_required">不能为空</string>
+    <string name="error_same_name">更新出错\n该名已存在</string>
+    <string name="successful_logout">注销成功</string>
+    <string name="fail_logout">注销失败</string>
+    <string name="already_logout">已经注销</string>
+
+    //身体数据
+    <string name="secret">保密</string>
+    <string name="gender">性别</string>
+    <string name="age">年龄</string>
+    <string name="character">系统性格</string>
+    <string name="face_shape">脸型</string>
+    <string name="skin_color">肤色</string>
+    <string name="hair_color">发色</string>
+    <string name="weight">体重</string>
+    <string name="body_length">身高</string>
+    <string name="chest">腰围</string>
+    <string name="waist_line">胸围</string>
+    <string name="hip_line">臀围</string>
+    <string name="shoulder">肩宽</string>
+    <string name="arm_length">臂长</string>
+    <string name="leg_length">腿长</string>
+
+    //按钮文本
+    <string name="cancel">取消</string>
+    <string name="submit">提交</string>
+    <string name="affirm">确认</string>
+    <string name="accept">接受</string>
+    <string name="reject">拒绝</string>
+    <string name="done">完成</string>
+    <string name="reset">重置</string>
+    <string name="previous">上一页</string>
+    <string name="next">下一页</string>
+    <string name="go_add">去添加</string>
+    <string name="register">新用户注册</string>
+    <string name="sign_in">注册</string>
+    <string name="qq_login">QQ登录</string>
+    <string name="log_out">注销登录</string>
+
+    //我的
+    <string name="user_control">用户管理</string>
+    <string name="before_login">还没有登录哦~</string>
+    <string name="test_preferences">测测喜好</string>
+    <string name="secure_control">安全管理</string>
+    <string name="realsense">英特尔实感</string>
+    <string name="closed">未开启</string>
+    <string name="exit">退出</string>
+
+    <string-array name="group_edit">
+        <item>重命名</item>
+        <item>新建</item>
+        <item>删除</item>
+        <item>分享</item>
+    </string-array>
+
+    <string-array name="child_edit">
+        <item>重命名</item>
+        <item>移动到</item>
+        <item>删除</item>
+        <item>分享</item>
+    </string-array>
+
+    <string-array name="friend_edit">
+        <item>移动到</item>
+        <item>不分享给Ta</item>
+        <item>屏蔽Ta的分享</item>
+        <item>删除</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>其他</item>
+        <item>女</item>
+        <item>男</item>
+    </string-array>
+
+    <string-array name="age_classify">
+        <item>18以下</item>
+        <item>45以上</item>
+    </string-array>
+
+    <string-array name="character">
+        <item>外向</item>
+    </string-array>
+
+    <string-array name="face_shape">
+        <item>圆脸</item>
+        <item>椭圆脸</item>
+        <item>四方脸</item>
+        <item>长方脸</item>
+        <item>菱形脸</item>
+        <item>倒三角</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="skin_color">
+        <item>偏白</item>
+        <item>偏黄</item>
+        <item>偏红</item>
+        <item>偏黑</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="hair_color">
+        <item>纯黑色</item>
+        <item>贵族棕</item>
+        <item>巧克力色</item>
+        <item>酒红色</item>
+        <item>板栗色</item>
+        <item>其他</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/red_700"
+    tools:context="com.thea.itailor.SettingsActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/auto_sync"
+            android:id="@+id/switch_auto_sync"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:textSize="18sp"
+            android:tag="auto_sync"
+            android:textColor="@color/grey_900"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_200" />
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/display_notification"
+            android:id="@+id/switch_notification"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:textSize="18sp"
+            android:checked="true"
+            android:tag="display_notification"
+            android:textColor="@color/grey_900"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_200" />
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/character"
+            android:id="@+id/switch_character"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:textSize="18sp"
+            android:checked="true"
+            android:textColor="@color/grey_900"
+            android:textOff="内向"
+            android:textOn="外向"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/grey_200" />
+
+        <RelativeLayout
+            android:id="@+id/rl_clear_cache"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+            <TextView
+                android:id="@+id/tv_clear_cache"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:text="@string/clear_cache"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:textColor="@color/grey_900" />
+
+            <TextView
+                android:id="@+id/tv_cache_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/log_out"
+            android:id="@+id/btn_logout"
+            android:layout_margin="16dp"
+            android:background="@drawable/accent_btn_background"
+            android:textColor="@drawable/accent_tv_color"/>
+    </LinearLayout>
+
+</LinearLayout>

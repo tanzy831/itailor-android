@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<armoire>
+    <lattice name="最爱">
+        <cloth name="1" image="c1.jpg" />
+        <cloth name="2" image="c2.jpg" />
+        <cloth name="3" image="c3.jpg" />
+        <cloth name="4" image="c4.jpg" />
+        <cloth name="5" image="c5.jpg" />
+        <cloth name="6" image="c6.jpg" />
+        <cloth name="7" image="c7.jpg" />
+        <cloth name="8" image="c8.jpg" />
+        <cloth name="9" image="c9.jpg" />
+        <cloth name="10" image="c10.jpg" />
+        <cloth name="11" image="c11.jpg" />
+        <cloth name="12" image="c12.jpg" />
+        <cloth name="13" image="c13.jpg" />
+        <cloth name="14" image="c14.jpg" />
+        <cloth name="15" image="c15.jpg" />
+    </lattice>
+</armoire>

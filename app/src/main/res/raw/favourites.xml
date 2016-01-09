@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<favourites>
+    <favourite>
+        <top>recommend4_top.jpg</top>
+    </favourite>
+    <favourite>
+        <top>recommend5_top.jpg</top>
+        <bottom>recommend5_bottom.jpg</bottom>
+    </favourite>
+    <favourite>
+        <top>recommend6_top.jpg</top>
+        <bottom>recommend6_bottom.jpg</bottom>
+    </favourite>
+    <favourite>
+        <top>recommend7_top.jpg</top>
+    </favourite>
+    <favourite>
+        <top>recommend8_top.jpg</top>
+    </favourite>
+    <favourite>
+        <top>recommend9_top.jpg</top>
+    </favourite>
+    <favourite>
+        <top>recommend10_top.jpg</top>
+        <bottom>recommend10_bottom.jpg</bottom>
+    </favourite>
+</favourites>

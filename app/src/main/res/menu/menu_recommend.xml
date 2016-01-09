@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.thea.itailor.recommend.app.RecommendFragment">
+
+    <item android:id="@+id/action_favour"
+        android:title="@string/action_favour"
+        android:icon="@mipmap/ic_favorite_border_white_36dp"
+        android:orderInCategory="1"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_share"
+        android:title="@string/action_share"
+        android:icon="@mipmap/ic_share_white_36dp"
+        android:orderInCategory="4"
+        app:showAsAction="always" />
+</menu>

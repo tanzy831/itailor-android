@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.thea.itailor1.MyFriendsActivity">
+
+    <item android:id="@+id/action_add_friend"
+        android:title="@string/action_add_friend"
+        android:icon="@mipmap/ic_add_white_36dp"
+        android:orderInCategory="4"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_search"
+        android:title="@string/action_search"
+        android:icon="@mipmap/ic_search_white_36dp"
+        android:orderInCategory="1"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="ifRoom"/>
+</menu>

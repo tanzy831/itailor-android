@@ -1,0 +1,189 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.thea.itailor.MainActivity">
+
+    <com.thea.itailor.widget.NoScrollViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize"/>
+
+    <com.thea.itailor.widget.MyTabLayout
+        android:id="@+id/tab_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/grey_50"
+        android:layout_gravity="bottom"
+        app:elevation="6dp"/>
+
+    <!--<FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize"/>
+
+    <RadioGroup
+        android:id="@+id/rg_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/grey_50"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:layout_marginBottom="-6dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_armoire"
+            android:drawableTop="@mipmap/ic_armoire"
+            android:text="@string/armoire"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radio_recommend"
+            android:drawableTop="@mipmap/ic_recommend"
+            android:text="@string/recommend"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radio_community"
+            android:drawableTop="@mipmap/ic_community"
+            android:text="@string/community"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radio_personal"
+            android:drawableTop="@mipmap/ic_personal"
+            android:text="@string/personal"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton" />
+    </RadioGroup>-->
+
+    <!--<LinearLayout
+        android:id="@+id/tab_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/grey_50"
+        android:layout_gravity="bottom">
+        <RelativeLayout
+            android:id="@+id/rl_armoire_tab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_background">
+            <TextView
+                android:id="@+id/tv_armoire_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"
+                android:textColor="@drawable/tab_text_color"
+                android:text="@string/armoire"/>
+
+            <ImageView
+                android:id="@+id/iv_armoire_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/armoire"
+                android:layout_above="@+id/tv_armoire_tab"
+                android:layout_marginTop="4dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ic_armoire"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_recommend_tab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_background">
+            <TextView
+                android:id="@+id/tv_recommend_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"
+                android:textColor="@drawable/tab_text_color"
+                android:text="@string/recommend"/>
+
+            <ImageView
+                android:id="@+id/iv_recommend_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/recommend"
+                android:layout_above="@+id/tv_recommend_tab"
+                android:layout_marginTop="4dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ic_recommend"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_community_tab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_background">
+            <TextView
+                android:id="@+id/tv_community_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"
+                android:textColor="@drawable/tab_text_color"
+                android:text="@string/community"/>
+
+            <ImageView
+                android:id="@+id/iv_community_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/community"
+                android:layout_above="@+id/tv_community_tab"
+                android:layout_marginTop="4dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ic_community"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_personal_tab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_background">
+            <TextView
+                android:id="@+id/tv_personal_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"
+                android:textColor="@drawable/tab_text_color"
+                android:text="@string/personal"/>
+
+            <ImageView
+                android:id="@+id/iv_personal_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/personal"
+                android:layout_above="@+id/tv_personal_tab"
+                android:layout_marginTop="4dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ic_personal"/>
+        </RelativeLayout>
+    </LinearLayout>-->
+
+</FrameLayout>

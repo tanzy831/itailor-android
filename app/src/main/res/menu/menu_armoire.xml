@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.thea.itailor.armoire.app.ArmoireFragment">
+
+    <item android:id="@+id/action_camera"
+        android:title="@string/action_camera"
+        android:icon="@mipmap/ic_camera_enhance_white_36dp"
+        android:orderInCategory="1"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_as_grid"
+        android:title="@string/action_grid"
+        android:icon="@mipmap/ic_action_view_as_grid_white"
+        android:orderInCategory="2"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/action_as_small_grid"
+        android:title="@string/action_small_grid"
+        android:icon="@mipmap/ic_action_view_as_grid_white"
+        android:orderInCategory="2"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/action_as_list"
+        android:title="@string/action_list"
+        android:icon="@mipmap/ic_action_view_as_list_white"
+        android:orderInCategory="3"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/action_new_group"
+        android:title="@string/action_new_group"
+        android:icon="@mipmap/ic_add_white_36dp"
+        android:orderInCategory="4"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/red_700"
+    tools:context=".ShowBodyActivity"
+    android:id="@+id/rl_show_body">
+
+    <ImageView
+        android:id="@+id/iv_show_cloth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_to_armoire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_action_view_as_grid_white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:backgroundTint="@android:color/transparent" />
+
+    <!--<ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ib_previous"
+        android:layout_alignParentTop="false"
+        android:contentDescription="@string/previous"
+        android:layout_alignBottom="@+id/fab_to_armoire"
+        android:layout_alignParentBottom="false"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/fab_to_armoire"
+        android:layout_marginBottom="21dp"
+        android:src="@mipmap/ic_action_previous_item_white"
+        android:background="@android:color/transparent"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ib_next"
+        android:contentDescription="@string/next"
+        android:layout_alignParentBottom="false"
+        android:layout_toRightOf="@+id/fab_to_armoire"
+        android:layout_toEndOf="@+id/fab_to_armoire"
+        android:layout_marginLeft="16dp"
+        android:layout_alignBottom="@+id/ib_previous"
+        android:src="@mipmap/ic_action_next_item_white"
+        android:background="@android:color/transparent"/>-->
+
+    <!--<ImageView
+        android:id="@+id/iv_shake_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fab_to_armoire"
+        android:layout_margin="16dp"
+        android:scaleType="centerCrop"/>-->
+
+</RelativeLayout>
